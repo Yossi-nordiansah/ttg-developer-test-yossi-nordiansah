@@ -1,0 +1,187 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+body {
+    background-image: url("/Soal-1/assets/images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.5);
+    width:30%;
+    border-radius: 20px;
+    margin: auto; 
+    padding: 20px 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+label {
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 40px;
+}
+
+.input {
+    margin-bottom: 1rem;
+}
+
+.field-input {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    width: 25px;
+}
+
+input {
+    border-radius: 7px;
+    width: 90%;
+    padding: 10px;
+    border: 2px solid rgb(145, 143, 143);
+    font-size: 15px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.field {
+    display: flex;
+    background-color: white;
+    border-radius: 7px;
+    border: 2px solid rgb(145, 143, 143);
+    width: 90%;
+}
+
+.input-password {
+    background-color: transparent;
+    border: none;
+}
+
+.toggle {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn-submit {
+    background: rgb(88, 125, 255);
+    margin: 0 auto;
+    display: block;
+    padding: .5rem ;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-top: 2rem;
+    border: none;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+  margin-left: 40px;
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .8rem;
+}
+
+.success-message {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+  display: none; 
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.success-message.active {
+  display: block;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+@media (max-width: 1300px) {
+  .container {
+    width: 50%;
+    padding: 20px;
+  }
+
+  label {
+    margin-left: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 70%;
+    padding: 20px;
+  }
+
+  label {
+    margin-left: 10px;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  .field {
+    width: 100%;
+  }
+
+  label {
+    margin-left: 30px;
+}
+
+  .field-input {
+    gap: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .icon {
+    width: 20px;
+  }
+
+  .btn-submit {
+    width: 100%;
+    font-size: 1rem;
+    padding: .7rem;
+  }
+
+    label {
+    margin-left: 25px;
+  }
+}
